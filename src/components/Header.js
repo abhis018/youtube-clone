@@ -5,19 +5,26 @@ import img from "../assets/you-tube-logo-without-background-c21e.png"
 
 const Header = () => {
   return (
-    <div className="grid grid-flow-col p-2 shadow-lg">
-        <div className="flex col-span-1"> 
-            <GiHamburgerMenu size={25} className="mt-1"/>
-            <img className="w-30 h-8 mx-2" src={img} alt="youtube logo"/>
+    <div className="grid grid-cols-12 items-center p-2 shadow-lg gap-x-6">
+        <div className="flex items-center col-span-3  justify-start">
+            <GiHamburgerMenu size={25} className="mr-2" />
+            <img className="h-8" src={img} alt="youtube logo" />
         </div>
-        <div className="bg-custom flex col-span-10 border border-gray-400 rounded-full">
-            <input type="text" placeholder="Search" className="w-1/2 rounded-l-full"/>
-            <ImSearch  size={25} className="mt-1"/>
+        <div className="flex items-center col-span-6 border border-gray-400 rounded-full overflow-hidden bg-custom">
+            <input
+            type="text"
+            placeholder="Search"
+            className="w-full px-4 py-1 outline-none"
+            />
+            <button className="px-4">
+            <ImSearch size={20} />
+            </button>
         </div>
-        <div className="col-span-1">
-            <FaCircleUser  size={25} className="mt-1"/>
+        <div className="flex justify-end col-span-3">
+            <FaCircleUser size={25} />
         </div>
     </div>
+
   )
 }
 
