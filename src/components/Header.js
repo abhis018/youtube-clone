@@ -2,13 +2,20 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImSearch } from "react-icons/im";
 import { FaCircleUser } from "react-icons/fa6";
 import img from "../assets/you-tube-logo-without-background-c21e.png"
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/appSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu());
+  }
+
   return (
     <div className="grid grid-cols-12 items-center p-2 shadow-lg gap-x-6">
         <div className="flex items-center col-span-3  justify-start">
-            <GiHamburgerMenu size={25} className="mr-2" />
-            <img className="h-8" src={img} alt="youtube logo" />
+            <GiHamburgerMenu size={25} className="mr-2 cursor-pointer" onClick={() => toggleMenuHandler()} />
+            <img className="h-6" src={img} alt="youtube logo" />
         </div>
         <div className="flex items-center col-span-6 border border-gray-400 rounded-full overflow-hidden bg-custom">
             <input
