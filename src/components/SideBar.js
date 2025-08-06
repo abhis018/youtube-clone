@@ -17,84 +17,92 @@ import { FaRegNewspaper } from "react-icons/fa";
 import { TfiCup } from "react-icons/tfi";
 import { GiGraduateCap } from "react-icons/gi";
 import { MdOutlinePodcasts } from "react-icons/md";
+import { useSelector } from "react-redux";
 
 const SideBar = () => {
+
+  const isMenuOpen = useSelector(store => store.app.isMenuOpen);
+
+  if(!isMenuOpen) return false;
+
   return (
-    <div>
-      <div className="flex items-center p-2">
-        <IoMdHome/>
+    <div className=" p-4 shadow-lg ">
+      <div className="flex items-center">
+        <IoMdHome className="text-2xl"/>
         <p className="pl-3">Home</p>
       </div>
-      <div className="flex items-center p-2">
-        <SiYoutubeshorts />
+      <div className="flex items-center">
+        <SiYoutubeshorts className="text-2xl" />
         <p className="pl-3">Shorts</p>
       </div>
-      <div className="flex items-center p-2">
-        <MdSubscriptions />
+      <div className="flex items-center ">
+        <MdSubscriptions className="text-2xl" />
         <p className="pl-3">Subscription</p>
       </div>
-      <div className="flex items-center p-2">
-        <SiYoutubemusic />
+      <div className="flex items-center ">
+        <SiYoutubemusic className="text-2xl" />
         <p className="pl-3">YouTube Music</p>
-      </div>
-      <div className="flex items-center p-2">
-        <AiOutlineHistory />
+      </div><hr className=" border-gray-300 border" />
+      <h1 className="font-bold pt-5">You </h1>
+      <div className="flex items-center ">
+        <AiOutlineHistory className="text-2xl" />
         <p className="pl-3">History</p>
       </div>
-      <div className="flex items-center p-2">
-        <MdOutlinePlaylistPlay/>
+      <div className="flex items-center ">
+        <MdOutlinePlaylistPlay className="text-2xl"/>
         <p className="pl-3">Playlists</p>
       </div>
-      <div className="flex items-center p-2">
-        <MdOutlineVideoSettings />
+      <div className="flex items-center ">
+        <MdOutlineVideoSettings className="text-2xl" />
         <p className="pl-3">Your videos</p>
       </div>
-      <div className="flex items-center p-2">
-        <MdOutlineWatchLater />
+      <div className="flex items-center ">
+        <MdOutlineWatchLater className="text-2xl" />
         <p className="pl-3">Watch Later</p>
       </div>
-      <div className="flex items-center p-2">
-        <GoThumbsup />
+      <div className="flex items-center ">
+        <GoThumbsup  className="text-2xl"/>
         <p className="pl-3">Liked videos</p>
       </div>
-      <div className="flex items-center p-2">
-        <MdOutlineFileDownload />
+      <div className="flex items-center ">
+        <MdOutlineFileDownload  className="text-2xl"/>
         <p className="pl-3">Downloads</p>
-      </div>
-      <div className="flex items-center p-2">
-        <FiShoppingBag />
+      </div><hr className=" border-gray-300 border"/>
+      <h1 className="font-bold pt-5">Explore</h1>
+      <div className="flex items-center ">
+        <FiShoppingBag className="text-2xl" />
         <p className="pl-3">Shoping</p>
       </div>
-      <div className="flex items-center p-2">
-        <FaMusic />
+      <div className="flex items-center ">
+        <FaMusic  className="text-2xl"/>
         <p className="pl-3">Music</p>
       </div>
-      <div className="flex items-center p-2">
-        <PiFilmSlateFill />
+      <div className="flex items-center ">
+        <PiFilmSlateFill className="text-2xl" />
         <p className="pl-3">Flims</p>
       </div>
-      <div className="flex items-center p-2">
-        <MdOutlineLiveTv />
+      <div className="flex items-center ">
+        <MdOutlineLiveTv  className="text-2xl"/>
         <p className="pl-3">Live</p>
       </div>
-      <div className="flex items-center p-2">
-        <SiYoutubegaming />
+      <div className="flex items-center ">
+        <SiYoutubegaming  className="text-2xl"/>
         <p className="pl-3">Gaming</p>
       </div>
-      <div className="flex items-center p-2">
-        <FaRegNewspaper />
+      <div className="flex items-center ">
+        <FaRegNewspaper  className="text-2xl"/>
         <p className="pl-3">News</p>
       </div>
-      <div className="flex items-center p-2">
-        <TfiCup />
+      <div className="flex items-center ">
+        <TfiCup  className="text-2xl"/>
         <p className="pl-3">Sport</p>
       </div>
-      <div className="flex items-center p-2">
-        <GiGraduateCap />
+      <div className="flex items-center ">
+        <GiGraduateCap className="text-2xl" />
         <p className="pl-3">Courses</p>
       </div>
-      <div className="flex items-center p-2">
-        <MdOutlinePodcasts />
+      <div className="flex items-center ">
+        <MdOutlinePodcasts className="text-2xl" />
         <p className="pl-3">Podcasts</p>
       </div>
     </div>
