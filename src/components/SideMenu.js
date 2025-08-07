@@ -4,14 +4,15 @@ import { MdSubscriptions } from "react-icons/md";
 import { SiYoutubemusic } from "react-icons/si";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaRegCircleUser } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const SideMenu = () => {
   return (
     <div className="flex flex-col items-center">
-        <div className="pt-8 flex flex-col items-center">
+        <Link to="/"><div className="pt-8 flex flex-col items-center">
             <IoMdHome className="text-2xl"/>
             <p className="text-xs text-center">Home</p>
-        </div>
+        </div></Link>
         <div className="pt-8 flex flex-col items-center">
             <SiYoutubeshorts className="text-2xl" />
             <p className="text-xs text-center">Shorts</p>
