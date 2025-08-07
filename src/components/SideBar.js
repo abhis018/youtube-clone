@@ -18,6 +18,7 @@ import { TfiCup } from "react-icons/tfi";
 import { GiGraduateCap } from "react-icons/gi";
 import { MdOutlinePodcasts } from "react-icons/md";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
 
@@ -27,10 +28,10 @@ const SideBar = () => {
 
   return (
     <div className=" p-4 shadow-lg ">
-      <div className="flex items-center">
+      <Link to="/"><div className="flex items-center">
         <IoMdHome className="text-2xl"/>
         <p className="pl-3">Home</p>
-      </div>
+      </div></Link>
       <div className="flex items-center">
         <SiYoutubeshorts className="text-2xl" />
         <p className="pl-3">Shorts</p>
