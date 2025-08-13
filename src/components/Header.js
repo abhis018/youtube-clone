@@ -56,9 +56,9 @@ const Header = () => {
               <ImSearch size={20} />
             </button>
           </div>
-          {showSuggestions && <ul className="absolute left-0 w-full bg-white border border-gray-300 rounded shadow-lg z-10">
+          {showSuggestions && (<ul className="absolute left-0 w-full bg-white border border-gray-300 rounded shadow-lg z-10">
             {suggestions.map(s => <li key={s} className="px-4 py-2 hover:bg-gray-100">{s}</li>)}
-          </ul>}
+          </ul>)}
         </div>
         <div className="flex justify-end col-span-3">
             <FaCircleUser size={25} />
