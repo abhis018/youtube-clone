@@ -51,6 +51,8 @@ const Header = () => {
               className="w-full px-4 py-1 outline-none"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              onFocus = {() => setShowSuggestions(true)}
+              onBlur={() => setShowSuggestions(false)}
             />
             <button className="px-4">
               <ImSearch size={20} />
