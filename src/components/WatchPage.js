@@ -1,9 +1,16 @@
-import React from 'react'
-import { useSearchParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux';
+import { useSearchParams } from 'react-router-dom';
+import { closeMenu } from "../utils/appSlice";
 
 const WatchPage = () => {
 
   const [searchParams] = useSearchParams();
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(closeMenu());
+  }, []);
 
   return (
     <div className='ml-12 mt-5'>
