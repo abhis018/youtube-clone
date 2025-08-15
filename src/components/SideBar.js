@@ -27,84 +27,84 @@ const SideBar = () => {
   if(!isMenuOpen) return false;
 
   return (
-    <div className=" p-4 shadow-lg ">
+    <div className=" p-4 m-2 shadow-lg ">
       <Link to="/"><div className="flex items-center">
         <IoMdHome className="text-2xl"/>
-        <p className="pl-3">Home</p>
+        <p className="pl-3 m-1">Home</p>
       </div></Link>
       <div className="flex items-center">
         <SiYoutubeshorts className="text-2xl" />
-        <p className="pl-3">Shorts</p>
+        <p className="pl-3 m-1">Shorts</p>
       </div>
       <div className="flex items-center ">
         <MdSubscriptions className="text-2xl" />
-        <p className="pl-3">Subscription</p>
+        <p className="pl-3 m-1">Subscription</p>
       </div>
       <div className="flex items-center ">
         <SiYoutubemusic className="text-2xl" />
-        <p className="pl-3">YouTube Music</p>
+        <p className="pl-3 m-1">YouTube Music</p>
       </div><hr className=" border-gray-300 border" />
       <h1 className="font-bold pt-5">You </h1>
       <div className="flex items-center ">
         <AiOutlineHistory className="text-2xl" />
-        <p className="pl-3">History</p>
+        <p className="pl-3 m-1">History</p>
       </div>
       <div className="flex items-center ">
         <MdOutlinePlaylistPlay className="text-2xl"/>
-        <p className="pl-3">Playlists</p>
+        <p className="pl-3 m-1">Playlists</p>
       </div>
       <div className="flex items-center ">
         <MdOutlineVideoSettings className="text-2xl" />
-        <p className="pl-3">Your videos</p>
+        <p className="pl-3 m-1">Your videos</p>
       </div>
       <div className="flex items-center ">
         <MdOutlineWatchLater className="text-2xl" />
-        <p className="pl-3">Watch Later</p>
+        <p className="pl-3 m-1">Watch Later</p>
       </div>
       <div className="flex items-center ">
         <GoThumbsup  className="text-2xl"/>
-        <p className="pl-3">Liked videos</p>
+        <p className="pl-3 m-1">Liked videos</p>
       </div>
       <div className="flex items-center ">
         <MdOutlineFileDownload  className="text-2xl"/>
-        <p className="pl-3">Downloads</p>
+        <p className="pl-3 m-1">Downloads</p>
       </div><hr className=" border-gray-300 border"/>
       <h1 className="font-bold pt-5">Explore</h1>
       <div className="flex items-center ">
         <FiShoppingBag className="text-2xl" />
-        <p className="pl-3">Shoping</p>
+        <p className="pl-3 m-1">Shoping</p>
       </div>
       <div className="flex items-center ">
         <FaMusic  className="text-2xl"/>
-        <p className="pl-3">Music</p>
+        <p className="pl-3 m-1">Music</p>
       </div>
       <div className="flex items-center ">
         <PiFilmSlateFill className="text-2xl" />
-        <p className="pl-3">Flims</p>
+        <p className="pl-3 m-1">Flims</p>
       </div>
       <div className="flex items-center ">
         <MdOutlineLiveTv  className="text-2xl"/>
-        <p className="pl-3">Live</p>
+        <p className="pl-3 m-1">Live</p>
       </div>
       <div className="flex items-center ">
         <SiYoutubegaming  className="text-2xl"/>
-        <p className="pl-3">Gaming</p>
+        <p className="pl-3 m-1">Gaming</p>
       </div>
       <div className="flex items-center ">
         <FaRegNewspaper  className="text-2xl"/>
-        <p className="pl-3">News</p>
+        <p className="pl-3 m-1">News</p>
       </div>
       <div className="flex items-center ">
         <TfiCup  className="text-2xl"/>
-        <p className="pl-3">Sport</p>
+        <p className="pl-3 m-1">Sport</p>
       </div>
       <div className="flex items-center ">
         <GiGraduateCap className="text-2xl" />
-        <p className="pl-3">Courses</p>
+        <p className="pl-3 m-1">Courses</p>
       </div>
       <div className="flex items-center ">
         <MdOutlinePodcasts className="text-2xl" />
-        <p className="pl-3">Podcasts</p>
+        <p className="pl-3 m-1">Podcasts</p>
       </div>
     </div>
   )
