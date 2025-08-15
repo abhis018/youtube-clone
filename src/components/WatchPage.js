@@ -7,10 +7,10 @@ const WatchPage = () => {
 
   const [searchParams] = useSearchParams();
 
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(closeMenu());
-  }, []);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(closeMenu());
+  // }, []);
 
   return (
     <div className='ml-12 mt-5'>
