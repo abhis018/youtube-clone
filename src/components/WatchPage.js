@@ -1,4 +1,3 @@
-
 import { useSearchParams } from 'react-router-dom';
 import CommentsContainer from './CommentsContainer';
 import LiveChat from "./LiveChat";
@@ -6,11 +5,6 @@ import LiveChat from "./LiveChat";
 const WatchPage = () => {
 
   const [searchParams] = useSearchParams();
-
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(closeMenu());
-  // }, []);
 
   return (
     <div className='flex flex-col w-full'>
